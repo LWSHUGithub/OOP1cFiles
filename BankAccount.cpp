@@ -91,6 +91,15 @@ const string BankAccount::prepareFormattedStatement() const {
 	os << prepareFormattedTransactionList();
 	return os.str();
 }
+const string BankAccount::prepareFormattedMiniStatement() const {
+	ostringstream os;
+	//account details
+	os << prepareFormattedAccountDetails();
+	//list of transactions (or message if empty)
+	os << prepareMiniTransactionList();
+	return os.str();
+}
+
 void BankAccount::readInBankAccountFromFile(const string& fileName) {
 	ifstream fromFile;
 	fromFile.open(fileName.c_str(), ios::in); 	//open file in read mode
@@ -182,6 +191,22 @@ const string BankAccount::prepareFormattedTransactionList() const
 	return os.str();
 }
 
+const string BankAccount::prepareMiniTransactionList() const
+{
+	ostringstream os;
+	//Edit to only show transactions within 1 day of statement
+	if (!transactions_.size() == 0)
+	{
+		os << "\n      TRANSACTIONS:";
+		os << transactions_.toFormattedStringMini();
+	}
+	else
+	{
+		os << "\n      NO TRANSACTIONS IN BANK ACCOUNT!";
+	}
+
+	return os.str();
+}
 
 //---------------------------------------------------------------------------
 //non-member operator functions

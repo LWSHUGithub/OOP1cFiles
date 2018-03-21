@@ -26,6 +26,7 @@ public:
 	int    size() const;
 
 	const string toFormattedString() const;		//return transactionlist as a (formatted) string
+	const string toFormattedStringMini() const;		//return transactionlist as a (formatted) string for a mini statement
 	ostream& putDataInStream(ostream& os) const;	//send TransactionList info into an output stream
 	istream& getDataFromStream(istream& is);	//receive TransactionList info from an input stream
 

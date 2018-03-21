@@ -143,6 +143,8 @@ void ATM::executeAccountCommand() {
 					break;
 				case 4:	m_acct4_produceStatement();
 					break;
+				case 6: m_acct6_showMiniStatement();
+					break;
 				default:theUI_.showErrorInvalidCommand();
 			}
 			theUI_.wait();
@@ -183,6 +185,12 @@ void ATM::m_acct3_depositToBankAccount() {
 void ATM::m_acct4_produceStatement() const {
 	assert(p_theActiveAccount_ != nullptr);
 	theUI_.showStatementOnScreen(p_theActiveAccount_->prepareFormattedStatement());
+}
+
+//---option 6 incomplete
+void ATM::m_acct6_showMiniStatement() const {
+	assert(p_theActiveAccount_ != nullptr);
+	theUI_.showMiniStatementOnScreen(p_theActiveAccount_->prepareFormattedMiniStatement());
 }
 
 //------private file functions

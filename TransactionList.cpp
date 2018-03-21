@@ -48,6 +48,19 @@ const string TransactionList::toFormattedString() const {
 	return (os_transactionlist.str());
 }
 
+const string TransactionList::toFormattedStringMini() const {
+	//return transaction list as a (formatted) string
+	//TO DO: alter so it only returns most recent transactions.
+	ostringstream os_transactionlist;
+	TransactionList tempTrList(*this);
+	while (!(tempTrList.size() == 0))
+	{
+		os_transactionlist << endl << tempTrList.newestTransaction().toFormattedString();
+		tempTrList.deleteFirstTransaction();
+	}
+	return (os_transactionlist.str());
+}
+
 ostream& TransactionList::putDataInStream(ostream& os) const {
 //put (unformatted) transaction list into an output stream
     TransactionList tempTrList(*this);

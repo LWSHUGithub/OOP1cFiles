@@ -176,7 +176,11 @@ void UserInterface::showStatementOnScreen(const string& statement) const {
 	cout << statement;
 	outputLine("----------------------------------------\n");
 }
-
+void UserInterface::showMiniStatementOnScreen(const string& statement) const {
+	outputHeader("PREPARING MINI STATEMENT...");
+	cout << statement;
+	outputLine("----------------------------------------\n");
+}
 //---------------------------------------------------------------------------
 // private support member functions
 //---------------------------------------------------------------------------

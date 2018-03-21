@@ -34,6 +34,7 @@ public:
 
 	//other operations
 	const string prepareFormattedStatement() const;
+	const string prepareFormattedMiniStatement() const;
 
     void recordDeposit(double amount);
 
@@ -51,6 +52,7 @@ public:
 
 	const string prepareFormattedAccountDetails() const;
 	const string prepareFormattedTransactionList() const;
+	const string prepareMiniTransactionList() const;
 
 	static const string getAccountType(const string& filename);
 	static const string getAccountType(char n);
