@@ -1,3 +1,9 @@
+commit 1a0b230a1cab618b97d7526266f50ea741115e14
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:57:32 2018 +0100
+
+    Added file to contain the version control log.
+
 commit 3d9daa85f3092692d8811b49a878b5f5691b0e8a
 Author: Liberty Ware <b5042560@my.shu.ac.uk>
 Date:   Wed Apr 11 12:48:25 2018 +0100
