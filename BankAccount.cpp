@@ -51,9 +51,9 @@ const string BankAccount::getAccountType(char n) {
 	//'0' for bank account, '1' for current account, '2' for saving account, etc.
 	switch (n)
 	{
-	case BANKACCOUNT_TYPE:		return "BANK"; 
-//	case CURRENTACCOUNT_TYPE:	return "CURRENT"; break;
-//etc..
+	case BANKACCOUNT_TYPE:		return "BANK";
+		//	case CURRENTACCOUNT_TYPE:	return "CURRENT"; break;
+		//etc..
 	default:					return "UNKNOWN";
 	}
 }
@@ -92,6 +92,13 @@ const string BankAccount::prepareFormattedStatement() const {
 	return os.str();
 }
 const string BankAccount::prepareFormattedMiniStatement() const {
+	/*
+	reads in the number of most recent transactions required by the
+	user and displays the details of these transactions, if any, on the bank account together with the
+	cumulated total for all these transactions. It also shows the account number, balance and
+	available funds (i.e., how much could be withdrawn from the account). If there are fewer
+	transactions than requested, it shows all the recorded transactions.
+	*/
 	ostringstream os;
 	//account details
 	os << prepareFormattedAccountDetails();
@@ -188,6 +195,19 @@ const string BankAccount::prepareFormattedTransactionList() const
 		os << "\n      NO TRANSACTIONS IN BANK ACCOUNT!";
 	}
 
+	return os.str();
+}
+
+const string BankAccount::prepareMiniFormattedAccountDetails() const
+{
+	//shows the account number, balance and available funds(i.e., how much could be withdrawn from the account).
+	assert(getAccountType(accountNumber_[0]) != "UNKNOWN");
+	ostringstream os;
+
+	os << "\n      ACCOUNT NUMBER:  " << accountNumber_;
+	os << fixed << setprecision(2) << setfill(' ');
+	os << "\n      BALANCE:         \234" << setw(10) << balance_;
+	os << "\n      ----------------------------------------";
 	return os.str();
 }
 

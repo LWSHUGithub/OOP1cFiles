@@ -51,6 +51,7 @@ public:
 	istream& getAccountDataFromStream(istream& is);
 
 	const string prepareFormattedAccountDetails() const;
+	const string prepareMiniFormattedAccountDetails() const;
 	const string prepareFormattedTransactionList() const;
 	const string prepareMiniTransactionList() const;
 
