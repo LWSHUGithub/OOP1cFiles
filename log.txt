@@ -1,0 +1,90 @@
+commit 3d9daa85f3092692d8811b49a878b5f5691b0e8a
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:48:25 2018 +0100
+
+    Added base diagram for Q2b.
+
+commit 963ed4919b3b5a3c62c147136935c4c6e5035cf4
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:34:30 2018 +0100
+
+    Update README.md
+
+commit 5c7003209c5222e24a6dc9f0465d8b6432686a4f
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:33:12 2018 +0100
+
+    Added notes to the report doc.
+
+commit 8cee1c4dc917eea13e98c9e532e3a327a0565218
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:22:37 2018 +0100
+
+    Removed question text from diagram 2a and added to report doc.
+
+commit bd4340e9f10e7552aa4f6d86c175fa2441841765
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 12:19:07 2018 +0100
+
+    Added numbers to sequence diagram.
+
+commit 2daa670e5a228338e9c30fabcf1f9e1e394f9502
+Merge: 099047f 28b2501
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 11:50:54 2018 +0100
+
+    Merge branch 'master' of https://github.com/LWSHUGithub/OOP1cFiles
+
+commit 099047fda68d58b4e8a07cb8e2682c3de2df5278
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Apr 11 11:48:33 2018 +0100
+
+    Exported UML diagram as JPEG, and some changes & comments to mini statement code.
+
+commit 28b2501d80ba6ca3ee6b98a8193de314053583ae
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 13:00:08 2018 +0000
+
+    Update README.md
+
+commit 06295931e40f3f9475419f5a360726005dc76801
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 12:58:12 2018 +0000
+
+    Q2a complete?
+
+commit 888b1cbd1c2a436187b4088ad012640ce4a69bc1
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 12:46:51 2018 +0000
+
+    Q2a progress.
+
+commit 8faea96559a965a3c8be369f885a3b2a4f153490
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 12:32:38 2018 +0000
+
+    Update README.md
+
+commit 132e491a4f021bc50c6e4d5de3fbe9caca0369cd
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 12:31:13 2018 +0000
+
+    Update README.md
+
+commit 242486bd2688923c63ad28f2f956cdeab512e23a
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 12:27:00 2018 +0000
+
+    Q3a started.
+
+commit 0b28d506422b78422c276d071d862e7d49dc262a
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 11:57:49 2018 +0000
+
+    File upload
+
+commit 02c1acde5e0711bea684c402568a8a86cc95fe82
+Author: Liberty Ware <b5042560@my.shu.ac.uk>
+Date:   Wed Mar 21 11:54:40 2018 +0000
+
+    Initial commit
