@@ -6,7 +6,8 @@
 ### To do
 + Q1
 + Q2
+  + a) Add numbering to the functions in the sequence diagram.
 + Q3
-  + Make changes to the TransactionList function to process the transation dates.
+  + a) Make changes to the TransactionList function to process the transation dates.
 + Q4
 + Q5
